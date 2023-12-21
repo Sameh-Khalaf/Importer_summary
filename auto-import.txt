@@ -10,3 +10,7 @@ autoimport is a command that added into crontab
     - in my traveloffice code ,, receive params and start make some process to chk if that data inserted before or not and contain matchcode of customer or will create 
       new customer with new order ::: 
           the steps in the crsinbox-autoImport action :::==>> 
+                  - get all agent user data from corp auth  to connect to it's CRS DB with all credentials   
+                  - get all data from IDENT table by passed pnr_id
+                  - system start logging msg for this steps what ever will connect to customer db or error  ANY AUTOIMPORT LOGS ARE SAVED IN MONGODB
+                  -                
