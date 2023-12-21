@@ -1,0 +1,12 @@
+-- Auto Import ait fly file data into system as a customer , order and services full details 
+        if user set auto import option from inbox partial in home dashboard then 
+          it pass request to  call importer code 'autoimportsettingClass with passed options for specific agent' from my travelsprint code
+          this will modify the autoimport option in importer.ini file
+=============================================================================================
+autoimport is a command that added into crontab 
+    - this job make many conditions to make sure that this flyair file details will autoimported into customer order and services tables
+    - if file data will be added >> then we get it's data from Ident Table and pass it from importer Code to 'traveloffice  /api/crs-inbox/auto-import'
+       with passed params
+    - in my traveloffice code ,, receive params and start make some process to chk if that data inserted before or not and contain matchcode of customer or will create 
+      new customer with new order ::: 
+          the steps in the crsinbox-autoImport action :::==>> 
